@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSoC Application - MIT App Inventor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://community.appinventor.mit.edu/uploads/default/original/3X/5/1/51de1aad4bfd4519201315eee03607910eb0772c.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Google Summer of Code 2025</h1>
+            <h2>MIT App Inventor Application</h2>
+            <div class="applicant-info">
+                <p><strong>Name:</strong> <span id="applicant-name">David Martinez</span></p>
+                <p><strong>Email:</strong> <span id="applicant-email">contacto@sonriemexico.org</span></p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#interest-app-inventor">Interest in App Inventor</a></li>
+                <li><a href="#interest-programming">Interest in Programming</a></li>
+                <li><a href="#proposed-project">Proposed Project</a></li>
+                <li><a href="#development-tools">Development Tools</a></li>
+                <li><a href="#team-experience">Team Experience</a></li>
+                <li><a href="#application-challenges">Application Challenges</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="interest-app-inventor" class="question-section">
+            <h3>Interest in App Inventor</h3>
+            <p>App Inventor empowers users without a CS background to create functional apps. I'm passionate about tools that make programming accessible and fun, especially in educational and low-resource environments like the ones I grew up in.</p>
+        </section>
+
+        <section id="interest-programming" class="question-section">
+            <h3>Interest in introductory programming</h3>
+            <p>Through Sonríe Mexico and local school collaborations, I introduced students to app design using visual tools like App Inventor and Tynker. I mentored beginners on logical thinking and how to transition from ideas to working prototypes.</p>
+        </section>
+
+        <section id="proposed-project" class="question-section">
+            <h3>Proposed summer project</h3>
+            <p>I propose enhancing App Inventor’s accessibility features and adding an AI-powered helper for block building. The goal is to assist users with disabilities and beginners in designing logic faster, using suggestions, keyboard navigation, voice-to-blocks, and visual contrast tools. This will expand the tool’s reach, especially in education.</p>
+        </section>
+
+        <section id="development-tools" class="question-section">
+            <h3>Experience with development tools</h3>
+            <h4>Java</h4>
+            <p>Studied Java formally and used it for desktop apps and algorithm practice. Contributed to open-source Java-based platforms in accessibility projects.</p>
+            <h4>JavaScript</h4>
+            <p>Built several production-level apps in React and vanilla JS, including a real-time global chat app. Focused on performance, state management, and real-time interaction.</p>
+            <h4>HTML/CSS</h4>
+            <p>Expert in creating accessible and responsive layouts. Designed startup landing pages and interactive components using modern CSS and ARIA best practices.</p>
+        </section>
+
+        <section id="team-experience" class="question-section">
+            <h3>Experience with teams, dev communities, and large codebases</h3>
+            <p>Worked with distributed teams in RuedaTec and multiple hackathons. Navigated complex repo structures in real-world settings. Participated in Agile sprints and led documentation and version control in 10k+ line projects. Also very active in community forums and GitHub issue collaboration.</p>
+        </section>
+
+        <section id="application-challenges" class="question-section">
+            <h3>Application Challenges</h3>
+            <h4>Challenge 1: Non-trivial App</h4>
+            <p>Developed an offline emergency response app for rural areas using App Inventor, running fully on-device with offline maps and SOS triggers. Built and deployed via local MIT server. Links:</p>
+            <ul>
+                <li><strong>AIA File:</strong> <a href="https://yourhost.com/files/emergency_app.aia">Download AIA</a></li>
+                <li><strong>APK File:</strong> <a href="https://yourhost.com/files/emergency_app.apk">Download APK</a></li>
+            </ul>
+            <h4>Challenge 2: Camera Component Redesign</h4>
+            <p>
+                The `useFront` property fails on newer Android due to deprecated APIs and shifting permission models post Android 10. My proposal introduces a new method `TakePicture(auto: boolean)` to allow background image capture if permissions allow, and a `preferredCamera: "front" | "back"` property. I would update `Camera.java`, `Form.java`, and integrate changes into the GWT interface. This would use CameraX for compatibility. I can provide the full proposal if needed.
+            </p>
+            <p>Challenge Report URL: <a href="https://yourhost.com/gsoc2025_camera_redesign">View Camera Design Challenge</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>This application was prepared for Google Summer of Code 2025 - MIT App Inventor</p>
+            <p>Last updated: <span id="last-updated">March 28, 2025</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
